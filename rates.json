@@ -1,0 +1,6 @@
+[
+{"county":"cook","labor_type":"foreman","wage":50.00},
+{"county":"dupage","labor_type":"foreman","wage":60.00},
+{"county":"dupage","labor_type":"engineer","wage":40.00},
+{"county":"cook","labor_type":"welder","wage":30.00}
+]

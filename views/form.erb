@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>prevailing wage</title>
+  </head>
+  <body>
+  <% form_tag '/', :method => 'post' do %>
+    <%= select_tag(:county, :options => wage_description.counties) %>
+    <%= select_tag(:labor_type, :options => wage_description.labor_types) %>
+    <%= submit_tag "search" %>
+  <% end %>
+  </body>
+</html

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>prevailing wage</title>
+  </head>
+  <body>
+    <% if search_result %>
+      <div>
+        <strong>county</strong>: <%= search_result['county'] %>
+      </div>
+      <div>
+        <strong>labor type</strong>: <%= search_result['labor_type'] %>
+      </div>
+      <div>
+        <strong>wage</strong>: <%= search_result['wage'] %>
+      </div>
+    <% else %>
+      No rate found
+    <% end %>
+  </body>
+</html
