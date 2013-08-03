@@ -1,12 +1,20 @@
+<!DOCTYPE HTML>
 <html>
   <head>
-    <title>prevailing wage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Untitled Document</title>
+    <link href="http://giljimenez.com/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-  <% form_tag '/', :method => 'post' do %>
-    <%= select_tag(:county, :options => wage_description.counties) %>
-    <%= select_tag(:labor_type, :options => wage_description.labor_types) %>
-    <%= submit_tag "search" %>
-  <% end %>
+    <div class="id_form">
+      <% form_tag '/', :method => 'post', :name => 'form1' do %>
+        <label for="county">county</label>
+        <%= select_tag(:county, :options => wage_description.counties, :id => "county") %>
+        <label for="labor_type">trade</label>
+        <%= select_tag(:labor_type, :options => wage_description.labor_types, :id => "labor_type") %>
+        <label for="search">submit</label>
+        <%= submit_tag "search", :id => "search", :name => 'search' %>
+      <% end %>
+    </div>
   </body>
-</html
+</html>
